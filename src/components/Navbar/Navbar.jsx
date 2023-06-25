@@ -1,7 +1,20 @@
 import React from "react";
 import "./Navbar.css";
 import photo from "./images/photo.png";
-import { FaHome, FaFacebook } from "react-icons/fa";
+import {
+  FaHome,
+  FaFacebook,
+  FaUserAlt,
+  FaFileAlt,
+  FaHandsHelping,
+  FaPhoneAlt,
+  FaSuitcase,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+  FaTwitter,
+  FaBars,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -15,56 +28,81 @@ function Navbar() {
           <div className="navbar_icons">
             <ul>
               <li>
-                <FaFacebook />
+                <a href="#">
+                  <FaLinkedin />
+                </a>
               </li>
               <li>
-                <FaFacebook />
+                <a href="#">
+                  <FaFacebook />
+                </a>
               </li>
               <li>
-                <FaFacebook />
+                <a href="#">
+                  <FaGithub />
+                </a>
               </li>
               <li>
-                <FaFacebook />
+                <a href="#">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FaInstagram />
+                </a>
               </li>
             </ul>
           </div>
           <div className="navbar_contents">
             <ul>
               <li>
-                <div className="navbar_icons">
+                <div className="navbar_menu_icons">
                   <FaHome />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">Home</div>
+                </a>
               </li>
               <li>
-                <div className="navbar_icons">
-                  <FaHome />
+                <div className="navbar_menu_icons">
+                  <FaUserAlt />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">About</div>
+                </a>
               </li>
               <li>
-                <div className="navbar_icons">
-                  <FaHome />
+                <div className="navbar_menu_icons">
+                  <FaFileAlt />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">Resume</div>
+                </a>
               </li>
               <li>
-                <div className="navbar_icons">
-                  <FaHome />
+                <div className="navbar_menu_icons">
+                  <FaHandsHelping />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">Services</div>
+                </a>
               </li>
               <li>
-                <div className="navbar_icons">
-                  <FaHome />
+                <div className="navbar_menu_icons">
+                  <FaSuitcase />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">Portfolio</div>
+                </a>
               </li>
               <li>
-                <div className="navbar_icons">
-                  <FaHome />
+                <div className="navbar_menu_icons">
+                  <FaPhoneAlt />
                 </div>
-                <div className="navbar_texts">Home</div>
+                <a href="#">
+                  <div className="navbar_texts">Contact</div>
+                </a>
               </li>
             </ul>
           </div>
@@ -134,6 +172,10 @@ function Navbar() {
             </ul>
           </div>
         </div>
+      </div>
+
+      <div className="navbar_hamburger">
+        <FaBars />
       </div>
     </>
   );

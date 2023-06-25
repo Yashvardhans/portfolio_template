@@ -6,6 +6,13 @@
   position: fixed;
   height: 100%;
   overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_hamburger {
+  display: none;
 }
 
 .navbar_container_mobile {
@@ -13,6 +20,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar_hamburger {
+    display: block;
+    z-index: 10000;
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
   .navbar_container {
     display: none;
   }
@@ -26,6 +42,13 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar_inner {
+    height: 100%;
+    justify-content: center;
   }
 }
 
@@ -33,6 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .navbar_image {
@@ -80,6 +104,12 @@
   align-items: center;
 }
 
-.navbar_icons {
+.navbar_menu_icons {
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar_icons {
+    width: 80%;
+  }
 }
