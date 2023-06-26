@@ -5,6 +5,7 @@
 body {
   background-color: #291642;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {

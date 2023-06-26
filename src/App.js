@@ -12,7 +12,7 @@ function App() {
       <div className="all_contents">
         <Banner />
         <About />
-        {/* <Technologies /> */}
+        <Technologies />
         {/* <Projects /> */}
         <Contact />
       </div>
