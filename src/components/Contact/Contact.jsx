@@ -26,7 +26,7 @@ function Contact() {
                 name=""
                 id=""
                 cols="20"
-                rows="10"
+                rows="6"
                 placeholder="Your Message"
               />
             </div>

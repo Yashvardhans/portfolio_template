@@ -31,7 +31,7 @@
 
 .banner_button:hover {
   background: #fff;
-  color: #000;
+  color: #ed41c7;
 }
 
 .banner_button a {
@@ -97,7 +97,7 @@
   }
 
   .banner_button {
-    padding: 14px 40px;
+    padding: 10px 40px;
     margin-top: 6px;
   }
 
