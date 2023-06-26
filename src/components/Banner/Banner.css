@@ -1,0 +1,108 @@
+.banner_container {
+  color: #fff;
+  padding: 100px 50px;
+}
+
+.banner_p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+.banner_heading {
+  color: #fff;
+  font-size: 64px;
+  line-height: 70px;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.banner_button {
+  border-radius: 10px;
+  background: #6e07f3;
+  padding: 20px 80px;
+  margin-top: 30px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.banner_button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.banner_button a {
+  width: 100%;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner_heading {
+    font-size: 52px;
+    line-height: 58px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner_heading {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .banner_container {
+    padding: 80px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner_heading {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+
+  .banner_container {
+    padding: 80px 10px;
+  }
+
+  .banner_button {
+    padding: 18px 60px;
+    margin-top: 20px;
+  }
+
+  .banner_button a {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner_heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .banner_p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner_container {
+    padding: 60px 4px;
+  }
+
+  .banner_button {
+    padding: 14px 40px;
+    margin-top: 6px;
+  }
+
+  .banner_button a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

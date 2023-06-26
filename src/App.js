@@ -11,9 +11,9 @@ function App() {
       <Navbar />
       <div className="all_contents">
         <Banner />
-        <About />
+        {/* <About />
         <Technologies />
-        <Projects />
+        <Projects /> */}
         <Contact />
       </div>
     </div>
