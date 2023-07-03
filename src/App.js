@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Technologies from "./components/Technologies/Technologies";
 
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
         <Banner />
         <About />
         <Technologies />
-        {/* <Projects /> */}
+        <Projects />
         <Contact />
       </div>
     </div>
