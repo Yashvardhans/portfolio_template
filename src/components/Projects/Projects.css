@@ -1,0 +1,42 @@
+.project-header{
+    color:aliceblue;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.25rem 0;
+    
+    
+}
+
+.nav-button{
+    padding: 5px 10px;
+    background-color: #291642;
+    color: white;
+    margin: 0 15px;
+    
+}
+
+.active{
+    background-color: white;
+    padding: 5px 10px;
+}
+.nav-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.project-image{
+    width: 273px ;
+    height: 160px;
+    
+    
+}
