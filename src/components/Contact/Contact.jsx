@@ -5,8 +5,8 @@ import emailjs from "@emailjs/browser";
 
 function Contact() {
 
-
-  const SendEmail = () => {
+  const SendEmail = (e) => {
+    e.preventDefault() 
     var params = {
       from_name: name,
       email_id: email,
@@ -50,7 +50,7 @@ function Contact() {
         </div>
 
         <div className="contact_form_form">
-          <form action="">
+          <form onSubmit={SendEmail}>
             <div className="contact_form_row_1">
               <input
                 type="text"
@@ -87,7 +87,7 @@ function Contact() {
             </div>
 
             <div className="contact_form_button">
-              <button onClick= {SendEmail()} >Shoot Message</button>
+              <button type='submit' >Shoot Message</button>
             </div>
           </form>
         </div>
