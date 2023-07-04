@@ -88,4 +88,8 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .project-image {
+    margin-right: 0;
+  }
 }
