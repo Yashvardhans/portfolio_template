@@ -33,6 +33,17 @@ const buttons = ['All' , 'FrontEnd' , 'BackEnd']
   
 const [selectedButton, setSelectedButton] = useState(1);
 
+const [active , setActive] = useState(false);
+
+const handleMouseOver = () =>{
+  setActive(true);
+
+};
+
+const handleMouseOut = () =>{
+  setActive(false);
+
+};
 
 const handleButtonClick = (buttonId) => {
   setSelectedButton(buttonId);
@@ -55,14 +66,22 @@ const handleButtonClick = (buttonId) => {
           {button}
         </button>
       ))}
-        {/* <button className={clicked ?'active':"nav-button"} onClick={() => handleButtonClick(1)}>All</button>
-        <button className={clicked ?'active':"nav-button"} onClick={() => handleButtonClick(2)}>FrontEnd</button>
-        <button className={clicked ?'active':"nav-button"} onClick={() => handleButtonClick(3)}>FullStack</button> */}
+       
       </div>
-      <div className="project-list">
+      <div className="project-list" style={{position:'relative' , display:'flex' , flexWrap :'wrap'}}>
       {getImageUrls(selectedButton).map((imageUrl, index) => (
-          <img className='project-image' key={index} src={imageUrl} alt={`Image ${index + 1}`}  />
+          <a href="#" style={{ flexBasis: '25%', marginBottom: '160px'}}
+          
+          >
+            <img className='project-image' key={index} src={imageUrl} alt={buttons[index]} 
+            style={{ position: 'absolute', width: '273px', height: '160px' }}
+            // onMouseOver={handleMouseOver}
+            // onMouseOut={handleMouseOut} 
+            />
+          </a> 
         ))}
+        
+        <div className={active ? "project-image overlay" : "project-image"}></div>
       </div>
     
   </div>

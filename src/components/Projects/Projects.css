@@ -30,13 +30,24 @@
 }
 
 .project-list{
-    display: flex;
-    flex-wrap: wrap;
+    width: 1092px;
+    height: auto;
+    
    
 }
+
+
 .project-image{
     width: 273px ;
     height: 160px;
     
-    
+   
 }
+.overlay {
+    display: block;
+    position: absolute;
+    z-index: 9;
+    opacity: 0.8;
+    background: #285f3b;
+    
+  }

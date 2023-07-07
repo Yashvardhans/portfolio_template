@@ -93,13 +93,14 @@
     right: 20px;
     font-size: 20px;
     line-height: 26px;
+    background-color: #291642;
   }
   .navbar_container {
     display: none;
   }
 
   .navbar_container_mobile {
-    display: none;
+    display: block;
     margin: 0;
     padding: 0;
     width: 200px;
