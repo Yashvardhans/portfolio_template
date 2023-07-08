@@ -1,4 +1,5 @@
-import React from "react";
+import { useState } from "react";
+import React  from "react";
 import "./Navbar.css";
 import photo from "./images/photo.png";
 import {
@@ -14,9 +15,19 @@ import {
   FaGithub,
   FaTwitter,
   FaBars,
+  FaRegWindowClose
 } from "react-icons/fa";
 
 function Navbar() {
+
+  const [mobile , setMobile] = useState(false);
+  const [open , setOpen] = useState(true)
+
+  const handleScreen = () =>{
+    setMobile(!mobile)
+    setOpen(!open)
+  }
+
   return (
     <>
       <div className="navbar_container">
@@ -109,7 +120,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="navbar_container_mobile">
+      <div className={mobile ? "navbar_container_mobile" : "navbar_container"}>
         <div className="navbar_inner">
           <div className="navbar_image">
             <img src={photo} alt="" />
@@ -199,9 +210,9 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="navbar_hamburger">
-        <FaBars />
-      </div>
+      <button onClick={handleScreen} className="navbar_hamburger">
+        {open ? <FaBars/> : <FaRegWindowClose/>}
+      </button>
     </>
   );
 }
