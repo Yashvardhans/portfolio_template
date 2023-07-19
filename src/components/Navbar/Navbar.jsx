@@ -1,5 +1,5 @@
 import { useState } from "react";
-import React  from "react";
+import React from "react";
 import "./Navbar.css";
 import photo from "./images/photo.png";
 import {
@@ -15,18 +15,18 @@ import {
   FaGithub,
   FaTwitter,
   FaBars,
-  FaRegWindowClose
 } from "react-icons/fa";
 
+import { AiOutlineClose } from "react-icons/ai";
+
 function Navbar() {
+  const [mobile, setMobile] = useState(false);
+  const [open, setOpen] = useState(true);
 
-  const [mobile , setMobile] = useState(false);
-  const [open , setOpen] = useState(true)
-
-  const handleScreen = () =>{
-    setMobile(!mobile)
-    setOpen(!open)
-  }
+  const handleScreen = () => {
+    setMobile(!mobile);
+    setOpen(!open);
+  };
 
   return (
     <>
@@ -211,7 +211,7 @@ function Navbar() {
       </div>
 
       <button onClick={handleScreen} className="navbar_hamburger">
-        {open ? <FaBars/> : <FaRegWindowClose/>}
+        {open ? <FaBars /> : <AiOutlineClose />}
       </button>
     </>
   );

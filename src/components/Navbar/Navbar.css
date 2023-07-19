@@ -7,8 +7,9 @@
   height: 100%;
   overflow: auto;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 .navbar_hamburger {
@@ -88,6 +89,7 @@
     display: block;
     z-index: 10000;
     position: absolute;
+    position: fixed;
     color: #fff;
     top: 20px;
     right: 20px;
@@ -108,8 +110,8 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-   
     justify-content: center;
+    transition: all 0.5s;
   }
 
   .navbar_image {
