@@ -68,12 +68,13 @@ const handleButtonClick = (buttonId) => {
       ))}
        
       </div>
-      <div className="project-list" style={{position:'relative' , display:'flex' , flexWrap :'wrap'}}>
+      <div className="project-list">
       {getImageUrls(selectedButton).map((imageUrl, index) => (
+       
           <a href="#" style={{ flexBasis: '25%', marginBottom: '160px'}}
           
           >
-            <img className='project-image' key={index} src={imageUrl} alt={buttons[index]} 
+            <img className= 'project-image' key={index} src={imageUrl} alt={buttons[index]} 
             style={{ position: 'absolute', width: '273px', height: '160px' }}
             // onMouseOver={handleMouseOver}
             // onMouseOut={handleMouseOut} 

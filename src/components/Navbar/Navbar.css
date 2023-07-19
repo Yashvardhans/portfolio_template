@@ -7,7 +7,7 @@
   height: 100%;
   overflow: auto;
   display: flex;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
 }
 
@@ -100,7 +100,7 @@
   }
 
   .navbar_container_mobile {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -108,7 +108,7 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-    align-items: center;
+   
     justify-content: center;
   }
 
