@@ -11,27 +11,27 @@ import img7 from "./images/img7.jpg";
 import img8 from "./images/img8.jpg";
 
 function Projects() {
-  // const getImageUrls = (id) =>{
-  //   const projects = {
-  //     1:[
-  //       img1,img2,img3,img4,img5,img6,img7,img8
-  //     ],
-  //     2:[
-  //       img2,img3,img5,img4
-  //     ],
-  //     3:
-  //     [
-  //       img1 , img7 , img6 , img8 , img3
-  //     ]
-  //   };
-  //   return projects[id] || []
-  // }
+  const getImageUrls = (id) =>{
+    const projects = {
+      1:[
+        img1,img2,img3,img4,img5,img6,img7,img8
+      ],
+      2:[
+        img2,img3,img5,img4
+      ],
+      3:
+      [
+        img1 , img7 , img6 , img8 , img3
+      ]
+    };
+    return projects[id] || []
+  }
 
-  // const buttons = ['All' , 'FrontEnd' , 'BackEnd']
+  const buttons = ['All' , 'FrontEnd' , 'BackEnd']
 
-  // const [selectedButton, setSelectedButton] = useState(1);
+  const [selectedButton, setSelectedButton] = useState(1);
 
-  // const [active , setActive] = useState(false);
+  const [active , setActive] = useState(false);
 
   // const handleMouseOver = () =>{
   //   setActive(true);
@@ -43,11 +43,11 @@ function Projects() {
 
   // };
 
-  // const handleButtonClick = (buttonId) => {
-  //   setSelectedButton(buttonId);
-  //   console.log(selectedButton);
+  const handleButtonClick = (buttonId) => {
+    setSelectedButton(buttonId);
+    console.log(selectedButton);
 
-  // };
+  };
 
   return (
     //   <div className="project-container">
@@ -74,7 +74,7 @@ function Projects() {
     //           <img className= 'project-image' key={index} src={imageUrl} alt={buttons[index]}
     //           style={{ position: 'absolute', width: '273px', height: '160px' }}
     //           // onMouseOver={handleMouseOver}
-    //           // onMouseOut={handleMouseOut}
+    //           // onMouseOut={handleMous eOut}
     //           />
     //         </a>
     //       ))}
@@ -93,35 +93,28 @@ function Projects() {
         <div className="project_main">
           <div className="project_tech">
             <div className="project_buttons">
-              <button>All</button>
-              <button>FrontEnd</button>
-              <button>Full Stack</button>
+              
+              {buttons.map((button, idx)=>(
+                <button
+                key={idx}
+                onClick={()=>handleButtonClick(idx+1)}
+                >{button}</button>
+              ))}
             </div>
           </div>
 
           {/* Images of Project */}
 
           <div className="project_images">
+          {getImageUrls(selectedButton).map((image , idx)=>(
             <a href="#">
-              <div className="project_single_img">
-                <img src={img1} alt="" />
-              </div>
-            </a>
-            <a href="#">
-              <div className="project_single_img">
-                <img src={img1} alt="" />
-              </div>
-            </a>
-            <a href="#">
-              <div className="project_single_img">
-                <img src={img1} alt="" />
-              </div>
-            </a>
-            <a href="#">
-              <div className="project_single_img">
-                <img src={img1} alt="" />
-              </div>
-            </a>
+            <div className="project_single_img">
+              <img key={idx} src={image} alt="" />
+            </div>
+          </a>
+          ))}
+            
+            
           </div>
         </div>
       </div>
