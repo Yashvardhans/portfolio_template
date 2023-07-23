@@ -120,7 +120,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className={mobile ? "navbar_container_mobile" : "navbar_container"}>
+      <div className={mobile ? "navbar_container active" : "navbar_container"}>
         <div className="navbar_inner">
           <div className="navbar_image">
             <img src={photo} alt="" />

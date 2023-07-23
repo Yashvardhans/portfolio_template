@@ -17,7 +17,8 @@
 }
 
 .navbar_container_mobile {
-  display: none;
+  left: -200px;
+  
 }
 
 .navbar_inner {
@@ -98,21 +99,25 @@
     background-color: #291642;
   }
   .navbar_container {
-    display: none;
-  }
-
-  .navbar_container_mobile {
     display: flex;
     margin: 0;
     padding: 0;
     width: 200px;
+    left: 0;
     background-color: #fff;
     position: fixed;
     height: 100%;
     overflow: auto;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all ease-out 0.5s;
+    left: -200px;
   }
+
+  .navbar_container.active{
+    left: 0;
+  }
+
+  
 
   .navbar_image {
     border-radius: 50%;
@@ -138,4 +143,5 @@
     font-size: 16px;
     line-height: 22px;
   }
+  
 }
