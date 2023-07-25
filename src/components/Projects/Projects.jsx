@@ -13,9 +13,81 @@ import img8 from "./images/img8.jpg";
 function Projects() {
   const getImageUrls = (id) => {
     const projects = {
-      1: [img1, img2, img3, img4, img5, img6, img7, img8],
-      2: [img2, img3, img5, img4],
-      3: [img1, img7, img6, img8, img3],
+      1:[
+        {
+          "title" : img1,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img2,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img3,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img4,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img5,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img6,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img7,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        }, {
+          "title" : img8,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        }
+
+      ],
+      2:[
+        {
+          "title" : img2,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img3,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img5,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img4,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+      ],
+      3:
+      [
+        {
+          "title" : img1,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img7,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img6,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img8,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        },
+        {
+          "title" : img3,
+          "link" : 'https://github.com/amaankhanak/portfolio_template'
+        }
+      ]
     };
     return projects[id] || [];
   };
@@ -49,16 +121,18 @@ function Projects() {
             </div>
           </div>
 
-          {/* Images of Project */}
+          
 
           <div className="project_images">
-            {getImageUrls(selectedButton).map((image, idx) => (
-              <a href="#">
-                <div className="project_single_img">
-                  <img key={idx} src={image} alt="" />
-                </div>
-              </a>
-            ))}
+          {getImageUrls(selectedButton).map((image , idx)=>(
+            <a href={image["link"]}>
+            <div className="project_single_img">
+              <img key={idx} src={image["title"]} alt="" />
+            </div>
+          </a>
+          ))}
+            
+            
           </div>
         </div>
       </div>
