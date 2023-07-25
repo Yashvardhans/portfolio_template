@@ -168,7 +168,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Images of Project */}
+          
 
           <div className="project_images">
           {getImageUrls(selectedButton).map((image , idx)=>(
