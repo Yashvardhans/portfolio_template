@@ -4,9 +4,8 @@ import line from "./images/line.png";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-
   const SendEmail = (e) => {
-    e.preventDefault() 
+    e.preventDefault();
     var params = {
       from_name: name,
       email_id: email,
@@ -18,7 +17,7 @@ function Contact() {
       .then(function (res) {
         alert("Success!" + res.status);
       });
-  }
+  };
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -40,7 +39,7 @@ function Contact() {
 
   return (
     <div className="container">
-      <div className="contact_form_container">
+      <div className="contact_form_container" id="contact">
         <div className="contact_form_heading">
           Drop <span>me a Message </span>
         </div>
@@ -87,7 +86,7 @@ function Contact() {
             </div>
 
             <div className="contact_form_button">
-              <button type='submit' >Shoot Message</button>
+              <button type="submit">Shoot Message</button>
             </div>
           </form>
         </div>

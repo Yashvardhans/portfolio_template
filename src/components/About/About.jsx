@@ -4,7 +4,7 @@ import picture from "./images/picture.png";
 
 function About() {
   return (
-    <div className="container">
+    <div className="container" id="about">
       <div className="about_container">
         <div className="about_img">
           <img src={picture} alt="" />
@@ -21,7 +21,7 @@ function About() {
             diverse range of technical abilities and am proficient in various
             programming languages, frameworks, and tools.
           </div>
-          <div className="about_summary">
+          <div className="about_summary" id="resume">
             <ul>
               <li>
                 <span>From:</span>Texas
@@ -37,9 +37,11 @@ function About() {
               </li>
             </ul>
           </div>
-          <div className="about_button">
-            <button>Download Resume</button>
-          </div>
+          <a href="#">
+            <div className="about_button">
+              <button>Download Resume</button>
+            </div>
+          </a>
         </div>
       </div>
     </div>
