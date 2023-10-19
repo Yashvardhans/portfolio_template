@@ -15,7 +15,7 @@ function Banner() {
           degree in Technology with a specialization in computer science.
         </div>
         <button className="banner_button">
-          <a href="#">Contact Me</a>
+          <a href="#contact">Contact Me</a>
         </button>
       </div>
     </div>

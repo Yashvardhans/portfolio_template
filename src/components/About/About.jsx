@@ -5,6 +5,9 @@ import picture from "./images/picture.png";
 function About() {
   return (
     <div className="container" id="about">
+      <div className="about_heading">
+        About<span> Me</span>
+      </div>
       <div className="about_container">
         <div className="about_img">
           <img src={picture} alt="" />
@@ -37,7 +40,7 @@ function About() {
               </li>
             </ul>
           </div>
-          <a href="#">
+          <a href="sample.pdf" download="Resume.pdf">
             <div className="about_button">
               <button>Download Resume</button>
             </div>

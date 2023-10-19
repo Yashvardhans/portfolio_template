@@ -3,7 +3,7 @@
   padding: 80px 50px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #e6ecf8;
+  /* border: 1px solid #e6ecf8; */
   padding: 60px 10px;
   flex-wrap: wrap;
 }
@@ -17,7 +17,27 @@
   justify-content: center;
   border-right: 1px solid #e6ecf8;
 }
-
+.service_heading {
+  color: #fff;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.service_heading::after{
+  content: "";
+  display: block;
+  border: 3px solid white;
+  width: 20%;
+  margin:8px auto;
+}
+.service_heading span {
+  font-weight: bold;
+}
 .tech_inner_container:nth-child(3) {
   border-right: none;
 }

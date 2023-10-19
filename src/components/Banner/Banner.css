@@ -1,6 +1,7 @@
 .banner_container {
   color: #fff;
   padding: 100px 50px;
+  height: 100vh;
 }
 
 .banner_p {
@@ -8,7 +9,7 @@
   font-size: 20px;
   line-height: 26px;
   font-family: "Poppins";
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .banner_heading {
@@ -17,14 +18,14 @@
   line-height: 70px;
   font-family: "Poppins";
   font-weight: 700;
-  margin-bottom: 30px;
+  margin:30px 0 30px 0;
 }
 
 .banner_button {
   border-radius: 10px;
   background: #6e07f3;
   padding: 20px 80px;
-  margin-top: 30px;
+  margin: 70px 0 0 0 ;
   transition: 0.3s;
   color: #fff;
 }
