@@ -21,6 +21,9 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
+import Footer from "../Footer/Footer";
+
+
 function Navbar() {
   const [mobile, setMobile] = useState(false);
   const [open, setOpen] = useState(true);
@@ -121,8 +124,11 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
+              
             </div>
+            <Footer></Footer>
           </div>
+          
         </div>
 
         <div
@@ -214,12 +220,14 @@ function Navbar() {
                 </li>
               </ul>
             </div>
+            <Footer/>
           </div>
         </div>
 
         <button onClick={handleScreen} className="navbar_hamburger">
           {open ? <FaBars /> : <AiOutlineClose />}
         </button>
+        
       </BrowserRouter>
     </>
   );

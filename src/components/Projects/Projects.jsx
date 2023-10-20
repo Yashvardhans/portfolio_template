@@ -17,74 +17,91 @@ function Projects() {
         {
           title: img1,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img2,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img3,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img4,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img5,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img6,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img7,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img8,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
       ],
       2: [
         {
           title: img2,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img3,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img5,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img4,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
       ],
       3: [
         {
           title: img1,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img7,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img6,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img8,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
         {
           title: img3,
           link: "https://github.com/amaankhanak/portfolio_template",
+          project_desc: "This is some content",
         },
       ],
     };
@@ -95,11 +112,13 @@ function Projects() {
 
   const [selectedButton, setSelectedButton] = useState(1);
 
-  const [active, setActive] = useState(false);
+  
 
   const handleButtonClick = (buttonId) => {
     setSelectedButton(buttonId);
     console.log(selectedButton);
+    
+    
   };
 
   return (
@@ -113,7 +132,7 @@ function Projects() {
           <div className="project_tech">
             <div className="project_buttons">
               {buttons.map((button, idx) => (
-                <button key={idx} onClick={() => handleButtonClick(idx + 1)}>
+                <button className={selectedButton === idx+1 ? "project-button active" : "project-button"} key={idx} onClick={() => handleButtonClick(idx + 1)}>
                   {button}
                 </button>
               ))}
@@ -124,6 +143,9 @@ function Projects() {
             {getImageUrls(selectedButton).map((image, idx) => (
               <a href={image["link"]}>
                 <div className="project_single_img">
+                  <div className="content">
+                    <p>{image["project_desc"]}</p>
+                  </div>
                   <img key={idx} src={image["title"]} alt="" />
                 </div>
               </a>

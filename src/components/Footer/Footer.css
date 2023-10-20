@@ -1,0 +1,13 @@
+/* Footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
