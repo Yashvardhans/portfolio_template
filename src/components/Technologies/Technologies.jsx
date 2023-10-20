@@ -5,7 +5,7 @@ import img from "./images/img.png";
 function Technologies() {
   return (
     <div className="container">
-       <div className="service_heading">
+       <div className="tech_heading">
           My<span> Skills</span>
         </div>
       <div className="tech_container" id="services">

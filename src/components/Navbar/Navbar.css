@@ -92,7 +92,7 @@
 .navbar_texts:hover::after {
   width: 100%;
   opacity: 1;
-  transform: scaleX(1); /* Scale the line horizontally to appear from the center */
+  transform: scaleX(1); 
 
 }
 @media only screen and (max-width: 992px) {
@@ -125,16 +125,21 @@
     height: 100%;
     overflow: auto;
     justify-content: center;
-    transition: all ease-out 0.5s;
+    
     left: -200px;
-  }
-
-  .navbar_container.active{
-    left: 0;
-    z-index: 1;
+    
   }
 
   
+  .navbar_container.active{
+    left: 0;
+    z-index: 1;
+    transition: all ease-out 0.5s;
+  }
+
+  .footer-mobile {
+    background-color: red;
+  }
 
   .navbar_image {
     border-radius: 50%;
@@ -148,6 +153,7 @@
   .navbar_inner {
     height: 100%;
     justify-content: center;
+    position: relative;
   }
 
   .navbar_name {
