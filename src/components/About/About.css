@@ -142,6 +142,7 @@
 
 @media only screen and (max-width: 992px) {
   .about_container {
+    height: auto;
     flex-direction: column;
     padding: 20px 10px;
   }
@@ -154,6 +155,9 @@
   .about_name {
     font-size: 24px;
     line-height: 30px;
+  }
+  .about_heading{
+    font-size: 24px;
   }
 
   .about_description {

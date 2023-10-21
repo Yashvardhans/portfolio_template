@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({footerClass}) => {
   return (
-    <div className="footer">
-      copyright&copy;YourName
+    <div className={`footer ${footerClass}`}>
+      <a href="mailto:yashvardhans016@gmail.com">yourEmail@company.com</a>
     </div>
   );
 };

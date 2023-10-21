@@ -132,7 +132,7 @@ function Projects() {
           <div className="project_tech">
             <div className="project_buttons">
               {buttons.map((button, idx) => (
-                <button className={selectedButton === idx+1 ? "project-button active" : "project-button"} key={idx} onClick={() => handleButtonClick(idx + 1)}>
+                <button className={selectedButton === idx+1 ? "project-button active-project" : "project-button"} key={idx} onClick={() => handleButtonClick(idx + 1)}>
                   {button}
                 </button>
               ))}

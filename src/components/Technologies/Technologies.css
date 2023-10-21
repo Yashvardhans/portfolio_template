@@ -17,7 +17,8 @@
   justify-content: center;
   border-right: 1px solid #e6ecf8;
 }
-.service_heading {
+.tech_heading {
+  margin: 2rem 0 0 0;
   color: #fff;
   font-family: "Quicksand";
   font-style: normal;
@@ -28,14 +29,14 @@
   margin-bottom: 30px;
   text-align: center;
 }
-.service_heading::after{
+.tech_heading::after{
   content: "";
   display: block;
   border: 3px solid white;
   width: 20%;
   margin:8px auto;
 }
-.service_heading span {
+.tech_heading span {
   font-weight: bold;
 }
 .tech_inner_container:nth-child(3) {
@@ -46,15 +47,7 @@
   margin-bottom: 20px;
 }
 
-.tech_heading {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "Poppins";
-  font-weight: 800;
-  margin-bottom: 20px;
-}
+
 
 .tech_p {
   color: #fff;
@@ -115,7 +108,7 @@
   }
 
   .tech_heading {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
     margin-bottom: 14px;
   }
