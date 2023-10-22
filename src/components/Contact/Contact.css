@@ -97,6 +97,19 @@
   font-weight: bold;
 }
 
+.contact_end {
+  border-top: 1px solid #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.contact_number:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 992px) {
   .contact_form_heading {
     font-size: 46px;
@@ -118,6 +131,10 @@
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 4px;
+  }
+
+  .contact_end {
+    padding: 10px;
   }
 }
 
@@ -155,5 +172,14 @@
     font-size: 16px;
     line-height: 22px;
     padding: 10px 0;
+  }
+
+  .contact_end {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .contact_number {
+    margin-bottom: 20px;
   }
 }

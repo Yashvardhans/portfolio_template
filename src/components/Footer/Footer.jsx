@@ -1,10 +1,10 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
-const Footer = ({footerClass}) => {
+const Footer = ({ footerClass }) => {
   return (
     <div className={`footer ${footerClass}`}>
-      <a href="mailto:yashvardhans016@gmail.com">yourEmail@company.com</a>
+      <a href="mailto:yashvardhans016@gmail.com">yourEmail@gmail.com</a>
     </div>
   );
 };

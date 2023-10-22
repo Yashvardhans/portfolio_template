@@ -1,5 +1,5 @@
 .tech_container {
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 80px 50px;
   display: flex;
   justify-content: space-between;
@@ -29,12 +29,12 @@
   margin-bottom: 30px;
   text-align: center;
 }
-.tech_heading::after{
+.tech_heading::after {
   content: "";
   display: block;
   border: 3px solid white;
   width: 20%;
-  margin:8px auto;
+  margin: 8px auto;
 }
 .tech_heading span {
   font-weight: bold;
@@ -45,9 +45,14 @@
 
 .tech_image {
   margin-bottom: 20px;
+  position: relative;
 }
 
-
+.inside_img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
 
 .tech_p {
   color: #fff;

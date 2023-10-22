@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Contact.css";
 import line from "./images/line.png";
 import emailjs from "@emailjs/browser";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Contact() {
   const SendEmail = (e) => {
@@ -89,6 +91,21 @@ function Contact() {
               <button type="submit">Shoot Message</button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div className="contact_end">
+        <div className="contact_copy">Copyright © 2023 John Doe</div>
+        <div className="contact_contact">
+          <div className="contact_address">
+            {" "}
+            <FaLocationDot /> City, State, Country
+          </div>
+          <div className="contact_number">
+            <a href="#">
+              <FaPhoneAlt /> +91 99999 99999
+            </a>
+          </div>
         </div>
       </div>
     </div>
